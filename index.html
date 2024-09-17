@@ -86,7 +86,21 @@
               {"field": "frequency", "type": "quantitative", "title": "Number of Attacks"}
             ]
           }
-        }
+        },
+        {
+          "data": {
+            "values": stateData
+          },
+          "mark": {
+            "type": "text",
+            "fontSize": 8
+          },
+          "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"},
+            "text": {"field": "state", "type": "nominal"}
+          }
+        },
       ]
     };
 
